@@ -37,4 +37,4 @@
 
 ## 许可证
 
-![](https://gitee.com/yhan219/blog-image/raw/master/yhan/LGPL.svg)
+![](image/LGPL.svg)
