@@ -36,8 +36,8 @@
 - 按照原理说明查看对应的数据是否删除成功
 
 ## 尝试其他人的脚本
-可尝试`reset_navicat_52pojie.sh`脚本，由[52破解](https://www.52pojie.cn/forum.php?mod=viewthread&tid=1669993)提供,原理是一样的，感谢
-@Dr-Octopus-dev 提供 #16。**侵删**。
+可尝试`reset_navicat_52pojie.sh`脚本，由[52破解](https://www.52pojie.cn/forum.php?mod=viewthread&tid=1669993)
+提供,原理是一样的，感谢[@Dr-Octopus-dev](https://github.com/yhan219/navicat_reset_mac/issues/16)提供。**侵删**。
 
 ## 许可证
 
