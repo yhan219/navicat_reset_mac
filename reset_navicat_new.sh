@@ -1,4 +1,5 @@
 # copy from https://github.com/pretend-m/navicat_for_mac_reset
+
 rm -rf ~/Library/Preferences/com.navicat.NavicatPremium.plist
 
 regex="\.([0-9A-Z]{32})"
