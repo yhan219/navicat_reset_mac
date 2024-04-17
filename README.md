@@ -53,3 +53,22 @@
 ## 许可证
 
 ![](image/LGPL.svg)
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=yhan219/navicat_reset_mac&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=yhan219/navicat_reset_mac&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=yhan219/navicat_reset_mac&type=Date"
+  />
+</picture>
