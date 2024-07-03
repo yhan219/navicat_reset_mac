@@ -1,4 +1,4 @@
-# navicat16 mac版无限重置试用期脚本
+# navicat16/17 mac版无限重置试用期脚本
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
@@ -24,7 +24,7 @@
 
 ## 注意事项
 - 使用前请备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
-- 如遇高版本不生效的，可尝试16.2版本。[点击从官网下载](https://download.navicat.com/download/navicat162_premium_cs.dmg)
+- 已支持最新版。~~如遇高版本不生效的，可尝试16.2版本。~~[点击从官网下载](https://download.navicat.com/download/navicat162_premium_cs.dmg)
 
 ## 原理说明
 
@@ -35,6 +35,8 @@
 - 删除`~/Library/Application\ Support/PremiumSoft\ CyberTech/Navicat\ CC/Navicat\ Premium/`目录下的`.`开头的隐藏文件
   如图
   ![](image/img.png)
+- 高版本删除`~/Library/Preferences/com.navicat.NavicatPremium.plis`文件中`key`值为`014BF4EC24C114BEF46E1587042B3619`对应的数据
+
 
 ## 为什么不生效
 
