@@ -15,6 +15,9 @@ version=${BASH_REMATCH[1]}
 echo "Detected Navicat Premium version $version"
 
 case $version in
+    "17")
+        file=~/Library/Preferences/com.navicat.NavicatPremium.plist
+        ;;
     "16")
         file=~/Library/Preferences/com.navicat.NavicatPremium.plist
         ;;
