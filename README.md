@@ -24,7 +24,7 @@
 
 ## 注意事项
 - 使用前请备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
-- 已支持最新版。~~如遇高版本不生效的，可尝试16.2版本。~~[点击从官网下载](https://download.navicat.com/download/navicat162_premium_cs.dmg)
+- 已支持最新版。~~如遇高版本不生效的，可尝试16.2版本。~~[点击从官网下载16.2版本](https://download.navicat.com/download/navicat162_premium_cs.dmg)
 
 ## 原理说明
 
