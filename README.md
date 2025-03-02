@@ -24,7 +24,7 @@
 
 ## 注意事项
 - 使用前请备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
-- 已支持最新版。~~如遇高版本不生效的，可尝试16.2版本。~~[点击从官网下载16.2版本](https://download.navicat.com/download/navicat162_premium_cs.dmg)
+- 已支持最新版。~~如遇高版本不生效的，可尝试16.2版本。[点击从官网下载16.2版本](https://download.navicat.com/download/navicat162_premium_cs.dmg)~~
 
 ## 原理说明
 
@@ -46,6 +46,12 @@
 - 退出navicat后再运行脚本
 - 重启Mac再执行脚本
 - 按照原理说明查看对应的数据是否删除成功
+
+## 完全卸载再重装
+- 重要!!!卸载前备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
+- 卸载navicat（可选）。
+- 执行卸载命令`sudo sh delete_navicat.sh`,输入密码后静候片刻。感谢[Mitsuha](https://github.com/yhan219/navicat_reset_mac/issues/31)提供的思路。
+- 从官网下载最新版安装，安装成功收导入备份数据，待过期后执行重置脚本。
 
 ## 尝试其他人的脚本
 - 可尝试`reset_navicat_52pojie.sh`脚本，由[52破解](https://www.52pojie.cn/forum.php?mod=viewthread&tid=1669993)
