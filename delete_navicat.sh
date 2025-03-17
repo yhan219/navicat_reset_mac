@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 定义要查找的目录
-directories=("/private" "$HOME")
+directories=("/private" "$HOME/Library")
 
 # 遍历目录
 for dir in "${directories[@]}"; do
