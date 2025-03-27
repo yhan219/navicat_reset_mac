@@ -29,14 +29,12 @@
 ## 原理说明
 
 - 删除`~/Library/Preferences/com.navicat.NavicatPremium.plis`文件中`key`值为`91F6C435D172C8163E0689D3DAD3F3E9`和`B966DBD409B87EF577C9BBF3363E9614`
-  对应的数据
+  对应的数据，高版本还需删除`014BF4EC24C114BEF46E1587042B3619`
   如图（按空格键可以预览）
   ![](image/img1.png)
 - 删除`~/Library/Application\ Support/PremiumSoft\ CyberTech/Navicat\ CC/Navicat\ Premium/`目录下的`.`开头的隐藏文件
   如图
   ![](image/img.png)
-- 高版本删除`~/Library/Preferences/com.navicat.NavicatPremium.plis`文件中`key`值为`014BF4EC24C114BEF46E1587042B3619`对应的数据
-
 
 ## 为什么不生效
 
@@ -51,7 +49,7 @@
 - 重要!!!卸载前备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
 - 卸载navicat（可选）。
 - 执行卸载命令`sudo sh delete_navicat.sh`,输入密码后静候片刻。感谢[Mitsuha](https://github.com/yhan219/navicat_reset_mac/issues/31)提供的思路。
-- 从官网下载最新版安装，安装成功收导入备份数据，待过期后执行重置脚本。
+- 从官网下载最新版安装，安装成功后导入备份数据，待过期后执行重置脚本。
 
 ## 尝试其他人的脚本
 - 可尝试`reset_navicat_52pojie.sh`脚本，由[52破解](https://www.52pojie.cn/forum.php?mod=viewthread&tid=1669993)
