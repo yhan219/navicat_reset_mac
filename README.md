@@ -2,8 +2,8 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+[English](README_en.md)
 
-[![码云Gitee](https://gitee.com/yhan219/navicat_reset_mac/badge/star.svg?theme=blue)](https://gitee.com/yhan219/navicat_reset_mac)
 [![GitHub](https://img.shields.io/github/stars/yhan219/navicat_reset_mac.svg?style=social&label=Stars)](https://github.com/yhan219/navicat_reset_mac)
 ![License](https://img.shields.io/badge/License-LGPL-blue.svg)
 
@@ -23,7 +23,7 @@
 
 ## 注意事项
 - 使用前请备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
-- 支持最新版。~~如遇高版本不生效的，可尝试16.2版本。[点击从官网下载16.2版本](https://download.navicat.com/download/navicat162_premium_cs.dmg)~~
+- 支持最新版。
 - 支持英文版。
 
 ## 原理说明
@@ -34,13 +34,13 @@
 - 删除`~/Library/Application\ Support/PremiumSoft\ CyberTech/Navicat\ CC/Navicat\ Premium/`目录下的`.`开头的隐藏文件
   如图
   ![](image/img.png)
-- 原理较简单，可参考[reset_navicat_old.sh](https://github.com/yhan219/navicat_reset_mac/blob/main/reset_navicat.sh)
+- 原理较简单，可参考[reset_navicat_old.sh](reset_navicat_old.sh)
 
 ## 为什么不生效
 
 有用户反馈使用后不生效，请按照以下步骤检查
 
-- 完全卸载后再重装，参考[此步骤](https://github.com/yhan219/navicat_reset_mac?tab=readme-ov-file#%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BD%E5%86%8D%E9%87%8D%E8%A3%85)
+- 完全卸载后再重装，参考[此步骤](#完全卸载再重装)
 - 退出navicat后再运行脚本
 - 重启Mac再执行脚本
 - 按照原理说明查看对应的数据是否删除成功
