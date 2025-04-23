@@ -40,7 +40,7 @@
 
 有用户反馈使用后不生效，请按照以下步骤检查
 
-- 完全卸载后再重装，参考后续步骤
+- 完全卸载后再重装，参考[此步骤](https://github.com/yhan219/navicat_reset_mac?tab=readme-ov-file#%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BD%E5%86%8D%E9%87%8D%E8%A3%85)
 - 退出navicat后再运行脚本
 - 重启Mac再执行脚本
 - 按照原理说明查看对应的数据是否删除成功
