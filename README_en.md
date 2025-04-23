@@ -50,11 +50,7 @@ If the script does not work, follow these steps:
 
 1. **Backup data**: Go to `File > Export Connections > Select All > Export Passwords`.
 2. (Optional) Uninstall Navicat manually.
-3. Run the uninstall command:
-   ```bash
-   sudo sh delete_navicat.sh
-   ```
-  Enter your password and wait for completion.
+3. Run the uninstall command:`sudo sh delete_navicat.sh`.Enter your password and wait for completion.
 4. Download the latest version from the official site, install it, import your backup, and run the reset script after the trial expires.
 
 ## Acknowledgments
