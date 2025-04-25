@@ -16,22 +16,15 @@ fi
 
 # ---------- 清理应用支持目录的哈希文件 ----------
 echo "清理应用支持目录的哈希文件..."
-hash_files=()
-while IFS= read -r -d $'\0' file; do
-  hash_files+=("$file")
-done < <(find "$APP_SUPPORT_DIR" -maxdepth 1 -type f -name ".[0-9A-Fa-f][0-9A-Fa-f]*" -print0)
-
-if [[ ${#hash_files[@]} -gt 0 ]]; then
-  for file in "${hash_files[@]}"; do
-    filename=$(basename "$file")
-    if [[ $filename =~ ^\.[0-9A-Fa-f]{32}$ ]]; then
-      echo "删除哈希文件: $filename"
-      rm -f "$file"
-    fi
-  done
-else
-  echo "未找到需要清理的哈希文件。"
-fi
+find "$APP_SUPPORT_DIR" -maxdepth 1 -type f -name '.[0-9A-F][0-9A-F]*' 2>/dev/null | \
+while IFS= read -r file; do
+  filename=$(basename "$file")
+  # 基础正则表达式匹配 32 位哈希
+  if echo "$filename" | grep -Eq '^\.([0-9A-F]{32})$'; then
+    echo "删除哈希文件: $filename"
+    rm -f "$file"
+  fi
+done
 
 # ---------- 处理偏好设置文件 ----------
 echo "处理偏好设置文件..."
