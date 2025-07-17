@@ -20,6 +20,7 @@
 ## 使用说明
 - 从 [navicat premium](https://www.navicat.com.cn/download/navicat-premium) 官网下载最新版。安装并运行，选择试用14天。
 - 待试用到期后，运行重置脚本。双击`reset_navicat.command`或执行`./reset_navicat.sh`
+- 可使用自动重置功能，双击`auto_reset_navicat.command`即可。请注意，如果脚本位置发生改变，需要重新运行。如需卸载，请双击`uninstall_auto.command`
 
 ## 注意事项
 - 使用前请备份数据。依次点击`文件-导出链接-全选-导出密码`导出并备份所有数据。
