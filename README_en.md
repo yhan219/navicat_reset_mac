@@ -28,13 +28,15 @@
 
 ## Principle Explanation
 
-- **Delete trial data** in `~/Library/Preferences/com.navicat.NavicatPremium.plist` by removing top-level keys matching 32-character hash formats (e.g., `91F6C435D172C8163E0689D3DAD3F3E9`, `B966DBD409B87EF577C9BBF3363E9614`, `014BF4EC24C114BEF46E1587042B3619`).  
-  Preview example (press Space to view):  
+- **Delete trial data** in `~/Library/Preferences/com.navicat.NavicatPremium.plist` by removing top-level keys matching 32-character hash formats (e.g., `91F6C435D172C8163E0689D3DAD3F3E9`, `B966DBD409B87EF577C9BBF3363E9614`, `014BF4EC24C114BEF46E1587042B3619`).
+  Preview example (press Space to view):
   ![](image/img1.png)
 
-- **Delete hidden files** starting with `.` in `~/Library/Application Support/PremiumSoft CyberTech/Navicat CC/Navicat Premium/`.  
-  Example:  
+- **Delete hidden files** starting with `.` in `~/Library/Application Support/PremiumSoft CyberTech/Navicat CC/Navicat Premium/`.
+  Example:
   ![](image/img.png)
+
+- **Delete trial tracking entries** in Keychain under `com.navicat.NavicatPremium` service that match 32-character hash formats (user-saved database connection passwords are preserved).
 
 - For implementation details, refer to [reset_navicat_old.sh](reset_navicat_old.sh).
 

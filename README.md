@@ -29,12 +29,13 @@
 
 ## 原理说明
 
-- 删除`~/Library/Preferences/com.navicat.NavicatPremium.plis`文件中`key`值符合32位哈希格式的顶级键的数据，例如中文版的：`91F6C435D172C8163E0689D3DAD3F3E9`、`B966DBD409B87EF577C9BBF3363E9614`和`014BF4EC24C114BEF46E1587042B3619`
+- 删除`~/Library/Preferences/com.navicat.NavicatPremium.plist`文件中`key`值符合32位哈希格式的顶级键的数据，例如中文版的：`91F6C435D172C8163E0689D3DAD3F3E9`、`B966DBD409B87EF577C9BBF3363E9614`和`014BF4EC24C114BEF46E1587042B3619`
   如图（按空格键可以预览）
   ![](image/img1.png)
 - 删除`~/Library/Application\ Support/PremiumSoft\ CyberTech/Navicat\ CC/Navicat\ Premium/`目录下的`.`开头的隐藏文件
   如图
   ![](image/img.png)
+- 删除钥匙串(Keychain)中`com.navicat.NavicatPremium`服务下符合32位哈希格式的试用期追踪条目（不会删除用户保存的数据库连接密码）
 - 原理较简单，可参考[reset_navicat_old.sh](reset_navicat_old.sh)
 
 ## 为什么不生效
