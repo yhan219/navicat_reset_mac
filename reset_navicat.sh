@@ -5,6 +5,7 @@ set -uo pipefail  # 启用严格错误处理 / Enable strict error handling
 APP_NAME="Navicat Premium"
 APP_SUPPORT_DIR="$HOME/Library/Application Support/PremiumSoft CyberTech/Navicat CC/Navicat Premium"
 PLIST_FILE="$HOME/Library/Preferences/com.navicat.NavicatPremium.plist"
+KEYCHAIN_SERVICE="com.navicat.NavicatPremium"
 
 # ---------- 终止 Navicat 进程 / Terminate Navicat process ----------
 echo "正在终止 $APP_NAME 进程... / Terminating $APP_NAME process..."
@@ -41,4 +42,31 @@ if [[ -f "$PLIST_FILE" ]]; then
   fi
 else
   echo "偏好设置文件不存在: $PLIST_FILE / Preferences plist file not found: $PLIST_FILE"
+fi
+
+# ---------- 清理钥匙串中的试用期追踪条目 / Clean trial tracking entries in Keychain ----------
+echo "清理钥匙串中的试用期追踪条目... / Cleaning trial tracking entries in Keychain..."
+# 获取所有 Navicat 钥匙串条目的账户名 / Get all Navicat keychain entry account names
+# 使用 awk 提取紧跟在服务名后的账户名 / Use awk to extract account names following service name
+keychain_accounts=$(security dump-keychain ~/Library/Keychains/login.keychain-db 2>/dev/null | \
+  awk '/0x00000007.*'"$KEYCHAIN_SERVICE"'/{found=1} found && /"acct"/{print; found=0}' | \
+  sed 's/.*<blob>="\([^"]*\)".*/\1/')
+
+deleted_count=0
+if [[ -n "$keychain_accounts" ]]; then
+  while IFS= read -r account; do
+    # 只删除32位哈希格式的账户（试用期追踪），保留用户的连接密码
+    # Only delete 32-character hash accounts (trial tracking), preserve user connection passwords
+    if echo "$account" | grep -Eq '^[0-9A-F]{32}$'; then
+      echo "删除钥匙串条目: $account / Deleting keychain entry: $account"
+      security delete-generic-password -s "$KEYCHAIN_SERVICE" -a "$account" >/dev/null 2>&1 || true
+      ((deleted_count++))
+    fi
+  done <<< "$keychain_accounts"
+fi
+
+if [[ $deleted_count -eq 0 ]]; then
+  echo "未找到需要删除的钥匙串条目。/ No keychain entries found to delete."
+else
+  echo "已删除 $deleted_count 个钥匙串条目。/ Deleted $deleted_count keychain entries."
 fi
