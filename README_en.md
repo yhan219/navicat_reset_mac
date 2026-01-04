@@ -66,7 +66,8 @@ This project is continuously updated with contributions from:
 
 - [Mitsuha](https://github.com/yhan219/navicat_reset_mac/issues/31) for the complete uninstallation guide and PR.
 - [take7yo](https://github.com/yhan219/navicat_reset_mac/issues/34) for the English version support and script optimizations.
-
+- For versions 17.3.7 and above, thanks to Minidoracat for PR https://github.com/yhan219/navicat_reset_mac/pull/48
+  
 ## License
 
 ![](image/LGPL.svg)
