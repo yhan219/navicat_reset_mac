@@ -57,6 +57,8 @@
 本项目持续在更新迭代优化，感谢以下人的贡献
 - 完全卸载感谢[Mitsuha](https://github.com/yhan219/navicat_reset_mac/issues/31)提供的思路和PR。
 - 英文版和优化版感谢[take7yo](https://github.com/yhan219/navicat_reset_mac/issues/34)提供的思路和脚本。
+- 17.3.7以上版本版感谢Minidoracat的PR https://github.com/yhan219/navicat_reset_mac/pull/48
+
 
 ## 许可证
 
