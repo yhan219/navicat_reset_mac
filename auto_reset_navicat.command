@@ -23,6 +23,8 @@ if [[ "$1" == "uninstall" ]]; then
     exit 0
 fi
 
+chmod +x $RESET_SCRIPT_PATH
+
 # 写入新的 plist 文件
 cat > "$PLIST_PATH" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -34,7 +36,6 @@ cat > "$PLIST_PATH" <<EOF
     <string>$PLIST_NAME</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/bin/bash</string>
         <string>$RESET_SCRIPT_PATH</string>
     </array>
     <key>StartInterval</key>
