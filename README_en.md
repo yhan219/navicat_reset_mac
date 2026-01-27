@@ -19,7 +19,7 @@
 - Download the latest version from the [navicat premium](https://www.navicat.com.cn/download/navicat-premium) official website. Install and run, choose a 14-day trial.
 - After the trial expires, **choose any of the following methods** to reset
 ### Reset using reset APP
-- 1.Download [ResetNavicat.app](ResetNavicat.app), move to the application, and open ResetNavicat.app to reset the trial period and start navicat.
+- 1.Download [ResetNavicat.zip](ResetNavicat.zip), unzip and move to the application, and open ResetNavicat.app to reset the trial period and start navicat.
 > The app is exported and generated based on [ResetNavicat.scpt](ResetNavicat.scpt).
 ### Use automatic reset
 - 2.Double-click `auto_reset_navicat.command`. Please note that if the script location changes, it will need to be re-run. To uninstall, double-click `uninstall_auto.command`

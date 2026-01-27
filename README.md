@@ -21,7 +21,7 @@
 - 从 [navicat premium](https://www.navicat.com.cn/download/navicat-premium) 官网下载最新版。安装并运行，选择试用14天。
 - 待试用到期后，选择以下**任意一种方式**重置
 ### 使用重置APP重置
-- 1.下载[ResetNavicat.app](ResetNavicat.app),移动到应用程序中，打开ResetNavicat.app即可重置试用期并启动navicat。
+- 1.下载[ResetNavicat.zip](ResetNavicat.zip),解压后移动到应用程序中，打开ResetNavicat.app即可重置试用期并启动navicat。
  > app根据[ResetNavicat.scpt](ResetNavicat.scpt)导出生成。
 ### 使用自动重置
 - 2.双击`auto_reset_navicat.command`即可。请注意，如果脚本位置发生改变，需要重新运行。如需卸载，请双击`uninstall_auto.command`
