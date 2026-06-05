@@ -44,6 +44,12 @@ else
   echo "偏好设置文件不存在: $PLIST_FILE / Preferences plist file not found: $PLIST_FILE"
 fi
 
+# 清除系统对 plist 的内存缓存 / Clear system in-memory cache for plist
+echo "清除偏好设置内存缓存... / Clearing preferences cache..."
+defaults delete "$KEYCHAIN_SERVICE" 2>/dev/null && \
+  echo "内存缓存已清除。/ Cache cleared." || \
+  echo "无内存缓存需要清除。/ No cache to clear."
+
 # ---------- 清理钥匙串中的试用期追踪条目 / Clean trial tracking entries in Keychain ----------
 echo "清理钥匙串中的试用期追踪条目... / Cleaning trial tracking entries in Keychain..."
 # 获取所有 Navicat 钥匙串条目的账户名 / Get all Navicat keychain entry account names
